@@ -1,0 +1,19 @@
+.main-banner {
+    background: url('../img/banner-bg.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: 75px;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1395px;
+        padding: 40px 0;
+    }
+    &__title {
+        font-size: 35px;
+        color: $color-yellow;
+        padding: 23px;
+        background: $color-dark-grey;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-right: 107px;
+    }
+}

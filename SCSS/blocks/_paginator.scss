@@ -1,0 +1,40 @@
+.paginator {
+    max-width: 1112px;
+    display: flex;
+    justify-content: space-between;
+    font: 20px $font_bold;
+    color: #414146;
+    margin: 0 0 58px 22px;
+    flex: 0 0 100%;
+    &__list {
+        display: flex;
+        width: 340px;
+        margin-right: 33px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link {
+        color: #414146;
+        position: relative;
+        padding: 16px;
+        transition: 0.2s;
+        &:hover {
+            background-color: $color-yellow;
+            transition: 0.2s;
+        }
+    }
+    &__next,
+    &__prev {
+        text-transform: uppercase;
+        color: #414146;
+        padding: 16px;
+        transition: 0.2s;
+        &:hover {
+            background-color: $color-yellow;
+            transition: 0.2s;
+        }
+    }
+}

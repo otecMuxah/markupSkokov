@@ -1,0 +1,25 @@
+.photo-stream {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    &__item {
+        flex: 0 0 31%;
+        margin-right: 5px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+    .footer__title {
+        margin-bottom: 20px;
+    }
+}

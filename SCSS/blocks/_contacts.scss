@@ -1,0 +1,42 @@
+.contacts {
+    &__title {
+        margin-bottom: 52px;
+    }
+    &__address,
+    &__phone,
+    &__email {
+        padding-left: 47px;
+        position: relative;
+        margin-bottom: 22px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            background: url(../img/sprite.png) no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__address:before {
+        background-position: 0 -383px;
+    }
+    &__phone {
+        display: flex;
+
+        &:before {
+            background-position: 0 -424px;
+        }
+    }
+
+    &__phone-number {
+        display: block;
+        color: $color-white;
+    }
+    &__email-link {
+        color: $color-yellow;
+    }
+    &__email {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'century';
+    src: url('../fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'century-bold';
+    src: url('../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'code-light';
+    src: url('../fonts/CODE_Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+//fonts
+
+$font_normal:     century, Arial, sans-serif;
+$font_bold:       century-bold, Arial, sans-serif;
+$font_light:      code-light, Arial, sans-serif;
+
+
+//break points
+$res_360:   360px;
+$res_550:   550px;
+$res_760:   770px;
+$res_800:   800px;
+$res_801:   801px;
+$res_1000:  1000px;
+$res_1140:  1140px;
+
+//colors
+$color-black:       #000;
+$color-yellow:      #ffea00;
+$color-dark-grey:   #424146;
+$color-text:        #5e5e5e;
+$color-text-2:      #737373;
+$color-white:       #fff;
+
+
+
+
+
+

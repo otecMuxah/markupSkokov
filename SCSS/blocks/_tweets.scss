@@ -1,0 +1,30 @@
+.tweets {
+    &__list {
+        margin-bottom: 42px;
+    }
+    &__link {
+        padding: 0 0 0 45px;
+        background: url(../img/Twitter-icon-big.png) no-repeat 0 31%;
+    }
+    &__text {
+        font: 13px/20px $font_normal;
+        color: $color-white;
+        margin-bottom: 5px;
+        &--yellow {
+            color: $color-yellow;
+        }
+    }
+    &__item {
+        margin-bottom: 11px;
+    }
+    &__date {
+        color: $color-yellow;
+        font: 8px $font_normal;
+    }
+    &__text-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

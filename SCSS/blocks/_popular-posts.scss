@@ -1,0 +1,19 @@
+.popular-posts {
+    column-count: 0;
+    display: flex;
+    flex-direction: column;
+    &__link {
+        padding: 0;
+        display: flex;
+    }
+    .blog-filter__small-image {
+        width: 100px;
+        height: 70px;
+    }
+    .post__likes {
+        background: url(../img/heart_icon_yellow.png) no-repeat 0 48%;
+    }
+    .blog-filter__item {
+        margin-bottom: 24px;
+    }
+}

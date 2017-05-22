@@ -1,0 +1,42 @@
+.header-nav {
+    &__list {
+        display: flex;
+        width: 690px;
+        justify-content: space-between;
+        @include tablet {
+            width: 100%;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        font: 600 16px $font_light;
+        color: $color-black;
+        position: relative;
+        padding: 0 9px;
+        z-index: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 0;
+            width: 100%;
+            background: $color-yellow;
+            transition: 0.3s;
+            z-index: -1;
+        }
+        &:hover::before {
+            height: 70px;
+        }
+        .footer & {
+            color: $color-white;
+            &:hover {
+                color: $color-dark-grey;
+            }
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.footer {
+    width: 100%;
+    background-color: $color-dark-grey;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1395px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 26px 0;
+        justify-content: space-between;
+        @include desktop {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__column {
+        flex: 0 0 30%;
+        color: $color-white;
+        font: 13px/20px $font_normal;
+
+        &:nth-child(2) {
+            margin-right: 30px;
+            flex-basis: 33%;
+        }
+        &:nth-child(3) {
+            flex: 0 0 23%
+        }
+        @include desktop {
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+    }
+    &__title {
+        font: 18px $font_normal;
+        color: $color-white;
+        margin-bottom: 23px;
+        &--follow-us {
+            margin-bottom: 12px;
+        }
+    }
+    &__underline {
+        color: $color-white;
+        background: $color-black;
+    }
+    &__underline-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1395px;
+        padding: 25px 0;
+    }
+    &__search {
+        input {
+            border: 0;
+            border-bottom: 2px solid $color-yellow;
+            background: none;
+            color: $color-white;
+            max-width: 230px;
+            width: 85%;
+        }
+        button {
+            background: url(../img/sprite.png) no-repeat 0 -495px;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            bottom: -5px;
+        }
+    }
+}
